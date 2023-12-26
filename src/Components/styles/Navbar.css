@@ -1,0 +1,145 @@
+.navmaindiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    border-bottom: 1px solid #F6F6F6;
+    box-shadow: inset 0px -5px 5px -5px rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+   
+}
+
+.otherRoutes{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.elevation{
+  font-size: 0.8rem;
+}
+
+.loginDiv{
+  margin-left: auto;
+  margin-bottom: 1rem;
+}
+
+
+#prepimage{
+    height: 150px;
+    width: 150px;
+}
+
+.NavLinks{
+    text-decoration: none;
+    color: #707070;
+}
+
+.NavLinks:hover{
+    color: black;
+}
+
+.Mcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+
+/* .nav-bar-lists{
+    position: absolute;
+    top:53px;
+    left:37%;
+    
+} */
+
+.dropdownContainer {
+    float: left;
+    overflow: hidden;
+    letter-spacing: 0.1ch;
+  }
+  .dropdownContainer .DropButton {
+    font-size: 13px;  
+    border: none;
+    outline: none;
+    background-color: white;
+    color: rgb(103, 103, 103);
+    letter-spacing: 0.1ch;
+    font-weight: 400;
+    margin: 0;
+    margin-right: 9px;
+  }
+  
+  
+  .SubRoutes a {
+    float: none;
+    color:grey;
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: 400;
+  }
+  
+  .SubRoutes a:hover {
+    color:rgb(4, 178, 253);
+    font-size: 14px;
+    text-shadow: rgb(0, 177, 253) 0.5px 1px;
+  }
+
+  .SubRoutes {
+    display: none;
+    position: absolute;
+    font-size: 14px;
+    background-color:white;
+    min-width: 255px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdownContainer:hover .SubRoutes {
+    display: block;
+  }
+
+  .button2{
+    border: 2px solid #FC31A4;
+    background-color: #FC31A4;
+    /* color: white; */
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    
+}
+
+.loginNav1{
+  text-decoration: none;
+  color: #FC31A4;
+}
+
+.loginNav2{
+  text-decoration: none;
+  color: white;
+}
+
+.loginNav1:hover{
+    color: black;
+}
+
+.button1{
+    border: 2px solid #FC31A4;
+    
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 1rem;
+    
+}
+
+.loginNav2:hover{
+    color: black;
+}

@@ -1,0 +1,80 @@
+.startMContainer{
+    display: flex;
+    width: 100%;
+    
+}
+
+.HomeMainContainer{
+    margin-top: 6rem;
+}
+
+
+.spanContainer{
+    /* display: flex; */
+    /* margin: auto; */
+    width: 49.7%;
+    /* align-items: center; */
+}
+
+.spanInnerCont{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4.5rem;
+    margin-top: 4rem;
+}
+
+.imageDiv{
+    width: 49.7%;
+    height: 30%;
+}
+
+.firstSpan{
+    color: #F78077;
+    font-size: 3rem;
+    font-weight: 1rem;
+}
+
+.secondSpan{
+    color: #3E4041;
+    font-size: 3rem;
+    font-weight: 4rem;
+    margin-bottom: 2rem;
+}
+
+.thirdSpan{
+    color: #F78077;
+    font-size: 1.5rem;
+    font-weight: 1rem;
+    margin-bottom: 2rem;
+}
+
+#prepbytes{
+    border-bottom: 0.2rem dashed #2BBFDD;
+}
+
+#prepbytes:hover{
+    background-color: #E5F7FB;
+}
+
+.knowmore{
+    width: 30%;
+    color: white;
+    background-color: #00A5EC;
+    border: 1px solid #00A5EC;
+    padding: 10px 30px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+
+.photoContainer{
+    height: 5rem;
+}
+
+.photoinner{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+}
+
+
