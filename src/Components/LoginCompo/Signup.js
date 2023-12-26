@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "../styles/Signup.css"
-import { NavLink, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 const Signup = () => {
 
@@ -123,27 +123,27 @@ const Signup = () => {
       {/* <div class="text">
          Contact us Form
       </div>  */}
-      <form action="#">
+      <form action="#" onSubmit={handleSubmit}>
          <div class="form-row">
             <div class="input-data">
-               <input type="text" required/>
+               <input type="text" required onChange={handleChange}/>
                <div class="underline"></div>
                <label for="">Name</label>
             </div>
             <div class="input-data">
-               <input type="text" required/>
+               <input type="text" required onChange={handleChange}/>
                <div class="underline"></div>
                <label for="">Email</label>
             </div>
          </div>
          <div class="form-row">
             <div class="input-data">
-               <input type="text" required/>
+               <input type="text" required onChange={handleChange}/>
                <div class="underline"></div>
                <label for="">Phone no.</label>
             </div>
             <div class="input-data">
-               <input type="password" required/>
+               <input type="password" required onChange={handleChange}/>
                <div class="underline"></div>
                <label for="">Password</label>
             </div>
@@ -151,12 +151,12 @@ const Signup = () => {
          
          <div class="form-row1">
             <div class="input-data">
-               <input type="text" required/>
+               <input type="text" required onChange={handleChange}/>
                <div class="underline"></div>
                <label for="">College</label>
             </div>
             <div class="input-data">
-               <input type="text" required/>
+               <input type="text" required onChange={handleChange}/>
                <div class="underline"></div>
                <label for="">Passing Year</label>
             </div>
