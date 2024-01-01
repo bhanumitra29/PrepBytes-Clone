@@ -1,0 +1,212 @@
+.MainHead{
+    margin-top: 6.5rem;
+}
+
+.masterfirstMain{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    gap: 5rem;
+   
+}
+
+.masterfirstmini1{
+    width: 47%;
+}
+
+.masterH1{
+    color: #2E91EB;
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+.firstSpan1{
+    font-size: medium;
+}
+
+.SpanDiv1{
+    line-height: 2rem;
+    word-spacing: 0.1rem;
+}
+
+.secondSpan2{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.enrolButton{
+    background-color: #00A6EB;
+    color: white;
+    padding: 10px 40px;
+    font-size: medium;
+    border: 1px solid #00A6EB;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.masterfirstmini2{
+    margin-top: 1rem;
+}
+
+.masterH1Div{
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.secondMain1{
+    width: 73%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    margin-top: 4rem;
+    /* margin-bottom: 5rem; */
+}
+
+.secondMiniAll{
+    width: 43%;
+    height: 5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    /* box-shadow: 0 0 5px 0 ; */
+    /* border: 1px solid #faeaea; */
+    border-radius: 7px;
+    padding-left: 2rem;
+}
+
+.secondMini1{
+    border-top: 1px solid #faeaea;
+    border-left: 1px solid #faeaea;
+   border-bottom: 4px solid #DF3897;
+   border-right: 4px solid #DF3897;
+}
+
+.secondMini2{
+    border-top: 1px solid #faeaea;
+    border-left: 1px solid #faeaea;
+    border-bottom: 4px solid #0398D3;
+    border-right: 4px solid #0398D3;
+}
+
+.secondMini3{
+    border-top: 1px solid #faeaea;
+    border-left: 1px solid #faeaea;
+    border-bottom: 4px solid #7914A3;
+    border-right: 4px solid #7914A3;
+}
+
+.secondMini4{
+    border-top: 1px solid #faeaea;
+    border-left: 1px solid #faeaea;
+    border-bottom: 4px solid #EB9A00;
+    border-right: 4px solid #EB9A00;
+}
+
+.boxImage{
+ width: 3rem;
+ height: 3rem;
+}
+
+.secondMiniText{
+    font-weight: 600;
+}
+
+.HeadingDivMain{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 0.5rem;
+    margin-top: 5rem;
+}
+
+.HeadingDivSpan{
+    margin: auto;
+   font-size: 1.8rem;
+}
+
+
+.otherDiv{
+    width: 100%;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+
+.other{
+    font-size: 1.5rem;
+}
+
+
+
+.founderImage{
+    width: 5rem;
+    height: 5rem;
+}
+
+.founderComImg1{
+    width: 10.5rem;
+    height: 2.5rem;
+}
+
+.founderComImg2{
+    width: 10.5rem;
+    height: 2.5rem;
+}
+
+.founderComImg3{
+    width: 10.5rem;
+    height: 2.5rem;
+}
+
+
+.founderMainDiv{
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: auto;
+    /* gap: 1rem; */
+    padding: 0.5rem;
+    border: 1px solid rgb(245, 233, 233);
+    margin-bottom: 4rem;
+}
+
+
+.founderMiniDiv1{
+    display: flex;
+    /* width: 20%; */
+    gap: 1rem;
+
+}
+
+.founderName{
+    font-weight: bold;
+    font-size: medium;
+}
+
+.founderComName{
+    font-size: small;
+}
+
+.FounderSpanDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.MasterHeadingDiv{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.MasterHeading{
+    font-size: 2rem;
+}

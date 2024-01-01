@@ -4,9 +4,10 @@
     background-repeat: no-repeat;
     min-height: 100vh;
     font-family: Inter;
+    margin-top: 5rem;
 }
 
-.miniContainer{
+.miniSignUpContainer{
     width: 90%;
     margin: auto;
     padding-top: 4.5rem;
@@ -79,16 +80,16 @@
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
 } */
-.container{
+.Formcontainer{
   max-width: 800px;
   background: #fff;
-  width: 25rem;
+  width: 22rem;
   padding: 25px 40px 10px 40px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
    border: 1px solid red;
    margin: auto;
 }
-.container .text{
+.Formcontainer .text{
   text-align: center;
   font-size: 41px;
   font-weight: 600;
@@ -97,17 +98,17 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.container form{
+.Formcontainer form{
   padding: 30px 0 0 0;
 }
-.container form .form-row{
+.Formcontainer form .form-row{
   display: flex;
   margin: 32px 0;
   flex-direction: column;
    gap: 2rem;
 }
 
-.container form .form-row1{
+.Formcontainer form .form-row1{
   display: flex;
   margin: 32px 0;
 
@@ -222,7 +223,7 @@ form .form-row1 .textarea{
   position: relative;
   z-index: 2;
 }
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .container .text{
     font-size: 30px;
   }
@@ -238,4 +239,4 @@ form .form-row1 .textarea{
   .submit-btn .input-data{
     width: 40%!important;
   }
-}
+} */

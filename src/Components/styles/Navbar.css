@@ -9,6 +9,7 @@
     background-color: #FFFFFF;
     position: fixed;
     top: 0;
+    z-index: 1;
    
 }
 
@@ -142,4 +143,24 @@
 
 .loginNav2:hover{
     color: black;
+}
+
+.requestMainDiv{
+  background-color: #00A6EB;
+  height: 2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  /* display: flex;
+  justify-content: center; */
+  font-size: medium;
+  padding-top: 0.5rem;
+  z-index: 1;
+  margin-top: 1rem;
+}
+
+.requestText{
+  text-decoration: underline;
 }

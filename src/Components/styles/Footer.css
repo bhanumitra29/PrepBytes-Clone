@@ -13,7 +13,7 @@
     /* flex-direction: row; */
     justify-content: space-between;
     margin: auto;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
   }
   
   .footer {
@@ -40,7 +40,7 @@
     /* justify-content: space-around; */
     flex-direction: column;
     /* width: 100%; */
-    width: 20%;
+    width: 25%;
     gap: 1rem;
     margin: auto;
   }
@@ -113,7 +113,7 @@
   
   .policiesMain{
     
-    height: 4rem;
+    height: 3rem;
     width: 100%;
     background-color: #D9F5F9;
     
@@ -163,40 +163,44 @@
   .mainquicklinks ul li{
     list-style-type: none;
     margin-left: -2.5em;
+    letter-spacing: 0.1rem;
+    font-size: medium;
   }
 
   .mainquicklinks1 ul li{
     list-style-type: none;
     margin-left: -2.5em;
+    letter-spacing: 0.1rem;
   }
   
   .outertext1{
     display: none;
   }
-  .icons{
-    height: 20px;
-    width: 50px;
-    cursor: pointer;
-  }
-  .youtube{
-    color: red;
-  }
   
-  .twitter{
-    color: rgb(39, 148, 202);
-  }
-  
-  .facebook{
-    color: rgb(39, 148, 202);
-  }
-   .instagram{
-    color: red;
-   }
-  
-   .github{
-    color: black;
-   }
-
    .spanSpace{
     padding-right: 1rem;
    }
+
+   .allicons{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 1rem;
+   
+   }
+
+   .allHeadings{
+    font-weight: 500;
+    font-size: large;
+   }
+
+   .allHeadingsDiv{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+   }
+
+   .allHeadingsDiv1{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+   }
+
+   

@@ -4,11 +4,12 @@ import Home from '../Home'
 import ElevationAcademy from '../ElevationAcademy'
 import NavbarCompo from '../Navbar/NavbarCompo'
 import Signup from '../LoginCompo/Signup'
-import Login from '../LoginCompo/Login'
+
 import MockTests from '../SubRoutes/StudyMaterial/MockTests'
 import VedioTutorial from '../SubRoutes/StudyMaterial/VedioTutorial'
 import MasterCompetitiveProgramming from '../SubRoutes/CoursesAndPrograms/MasterCompetitiveProgramming'
 import FullStackProgram from '../SubRoutes/CoursesAndPrograms/FullStackProgram'
+import Login from '../LoginCompo/Login'
 
 const RouterCompo = () => {
   return (

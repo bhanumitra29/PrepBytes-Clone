@@ -7,6 +7,12 @@
     background-color: #D9F5F9;
     padding: 0 2.5rem;
 }
+
+.vediototalMainContainer{
+margin-bottom: 3rem;
+}
+
+
 .firstInner{
     width: 40%;
     margin-top: 5rem;
@@ -40,6 +46,86 @@
     padding-bottom: 0.5rem;
 }
 
+.videoMainCont{
+    width: 90%;
+    /* margin-left: 5%; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.videominiContainer{
+    width: 26%;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    box-shadow: 0 0 5px 0 #cfcccc;
+    border-radius: 1px;
+    padding: 0.2rem;
+    /* border: 1px solid #252B48; */
+    /* transition: transform 0.3s ease;
+    transform: translateY(0%); */
+    /* position: relative; */
+
+    /* background-image: linear-gradient(to bottom, #E2ECF9, #FFFFFF); */
+}
+
+.videoImageDiv{
+    margin: auto;
+    /* margin-top: auto; */
+
+}
+
+.videoImage{
+    height: 16rem;
+    width: 21rem;
+    border-radius: 5px;
+}
+
+.videoHeadingDiv{
+   margin-left: 1rem;
+   margin-bottom: 1rem;
+}
+
+.videoHeading{
+    font-size: larger;
+    color: #424242;
+}
+
+.videoTextDiv{
+    margin-left: 1rem;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.videoText{
+   color: #858599;
+   line-height: 1.5rem;
+   /* letter-spacing: 0.1rem; */
+}
+
+.textImageSpanDiv{
+    /* margin-right: auto; */
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.videos{
+    color: #858599;
+}
+
+
+
+
 
 
 /* Mocktests */
@@ -60,6 +146,7 @@
 
 .MocktestsMaindiv{
     margin-top: 5rem;
+    margin-bottom: 3rem;
 }
 
 .container11 {
@@ -95,7 +182,7 @@
     color: #FFA000;
     padding: 0 40px;
     position: relative;
-    z-index: 1; 
+    z-index: 2; 
     font-size: large;
     
   }
@@ -113,6 +200,258 @@
     margin-top: 3.5rem;
 }
 
+#flex-container {
+    width: 83%;
+    /* margin-left: 5%; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.miniContainer {
+    width: 18%;
+    height: 20rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 5px 0 #cfcccc;
+    border-radius: 1px;
+    padding: 1.5rem;
+    /* border: 1px solid #252B48; */
+    /* transition: transform 0.3s ease;
+    transform: translateY(0%); */
+    position: relative;
+
+    background-image: linear-gradient(to bottom, #E2ECF9, #FFFFFF);
+}
   
+.priceMainContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.allMini{
+    display: flex;
+    flex-direction: column;
+    height: 4.5rem;
+    color: #707070;
+    line-height: 1.5rem;
+    justify-content: center;
+}
+
+.infoImage{
+    height: 1.6rem;
+    width: 1.6rem;
+}
   
-  
+.infoImageDiv{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.ShareDiv{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.shareSymbol{
+    font-size: larger;
+    color: #5F8DC4;
+}
+
+.mainHeading{
+    font-size: large;
+    color: #3969AD;
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.techImage{
+    height: 5rem;
+    width: 5rem;
+}
+
+.techImageDiv{
+    margin-bottom: 2rem;
+}
+
+.spanDowntext{
+    font-size: small;
+}
+
+.buynowButton{
+    background-color: #22559C;
+    width: 60%;
+    margin: auto;
+    color: white;
+    border: 1px solid #22559C;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+
+.practicetestMainCont{
+    width: 85%;
+    /* margin-left: 5%; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+    /* margin-bottom: 2rem; */
+    column-gap: 4rem;
+    /* row-gap: 2rem; */
+
+}
+
+.practicetestMainCont1{
+    width: 85%;
+    /* margin-left: 5%; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+    /* margin-bottom: 2rem; */
+    column-gap: 8rem;
+    /* row-gap: 2rem; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.practiceminiContainer{
+    width: 11rem;
+    height: 14rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 5px 0 #cfcccc;
+    border-radius: 1px;
+    padding: 0.5rem;
+    /* border: 1px solid #252B48; */
+    /* transition: transform 0.3s ease;
+    transform: translateY(0%); */
+    /* position: relative; */
+    
+    background-image: linear-gradient(to bottom, #C7DEF9, #FFFFFF);
+
+}
+
+
+.techImage1{
+    height: 5rem;
+    width: 5rem;
+}
+
+.techImageDiv1{
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.mainHeading1{
+    font-size: medium;
+    color: #3969AD;
+    line-height: 1.8rem;
+    /* margin-bottom: 2rem; */
+}
+
+.buynowButton1{
+    background-color: #22559C;
+    width: 80%;
+    margin: auto;
+    color: white;
+    border: 1px solid #22559C;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.companywiseMainCont2{
+    width: 85%;
+    /* margin-left: 5%; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+    /* margin-bottom: 2rem; */
+    column-gap: 4rem;
+    row-gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.companyminiContainer{
+    width: 11.5rem;
+    height: 11rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 5px 0 #cfcccc;
+    border-radius: 1px;
+    padding: 0.5rem;
+    /* border: 1px solid #252B48; */
+    /* transition: transform 0.3s ease;
+    transform: translateY(0%); */
+    /* position: relative; */
+    
+    background-image: linear-gradient(to bottom, #FCE2B7, #FFFFFF 60%);
+
+}
+
+.techImage2{
+    height: 8rem;
+    width: 8rem;
+}
+
+.techImageDiv2{
+    margin-bottom: 0.5rem;
+    margin-top: -0.5rem;
+    margin-bottom: auto;
+    height: 6rem;
+}
+
+.buynowButton2{
+    background-color: #22559C;
+    width: 80%;
+    margin: auto;
+    color: white;
+    border: 1px solid #22559C;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.companywiseMainCont21{
+    width: 85%;
+    /* margin-left: 5%; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+    /* margin-bottom: 2rem; */
+    column-gap: 8rem;
+    /* row-gap: 2rem; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
