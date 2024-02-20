@@ -18,14 +18,36 @@ const LoginMini = () => {
         setButton1(false)
     }
   return (
+
     <div>
       <div>
-            <button onClick={handleButton1}>Login</button><button onClick={handleButton2}>Sign Up</button>
-           <div> {button1 ? <LoginMain /> :" "}
-            {button2 ? <SignupMain /> : " "}
-            </div>
+        <div className='LogButtonsDiv'>
+          <div className='LogButtonsDivIn'>
+            <button
+              className={`LoginupButton ${button1 ? 'active' : ''}`}
+              onClick={handleButton1}
+            >
+              Login
+            </button>
+            <button
+              className={`SiginUpButton ${button2 ? 'active' : ''}`}
+              onClick={handleButton2}
+            >
+              Sign Up
+            </button>
+
+           
+          </div>
+          
         </div>
+        <div>
+          {button1 ? <LoginMain /> : ''}
+          {button2 ? <SignupMain /> : ''}
+        </div>
+      </div>
     </div>
+
+    
   )
 }
 

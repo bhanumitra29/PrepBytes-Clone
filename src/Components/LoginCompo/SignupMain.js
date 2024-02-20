@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import "../styles/Signup.css"
+
 const SignupMain = () => {
 
     const [data, setData] = useState({
@@ -31,7 +32,7 @@ const SignupMain = () => {
         // }
     
         axios
-          .post('https://ecommerce-project-backend-w01h.onrender.com/user/register', data)
+          .post('https://prepbytes-clone-backend.onrender.com/user/register', data)
           .then((res) => {
             // alert(res.data.msg);
             
@@ -68,59 +69,60 @@ const SignupMain = () => {
   return (
     <div>
        <div class="Formcontainer">
-      {/* <div class="text">
-         Contact us Form
-      </div>  */}
+      <div class="head123">
+      Create your new account
+      </div> 
+    
       <form>
          <div class="form-row">
             <div class="input-data">
                <input type="text" id='name' name='name' value={data.name} onChange={handleChange} required />
-               <div class="underline"></div>
-               <label htmlFor='name'>Name</label>
+               {/* <div class="underline"></div> */}
+               <label className='labelname' htmlFor='name'>Name</label>
             </div>
 
             <div class="input-data">
                <input type="email" id='email' name='email' value={data.email} onChange={handleChange} required />
-               <div class="underline"></div>
-               <label htmlFor='email'>Email</label>
+               {/* <div class="underline"></div> */}
+               <label className='labelname' htmlFor='email'>Email</label>
             </div>
          </div>
 
 
          <div class="form-row">
             <div class="input-data">
-               <input type="Number" id='phonenumber' name='phonenumber' value={data.phone} onChange={handleChange} required />
-               <div class="underline"></div>
-               <label htmlFor='phonenumber'>Phone no.</label>
+               <input type="number" id='phone' name='phone' value={data.phone} onChange={handleChange} required />
+               {/* <div class="underline"></div> */}
+               <label className='labelname' htmlFor='phone'>Phone no.</label>
             </div>
 
             <div class="input-data">
                <input type="password" id='password' name='password' value={data.password} onChange={handleChange} required />
-               <div class="underline"></div>
-               <label htmlFor='password'>Password</label>
+               {/* <div class="underline"></div> */}
+               <label className='labelname' htmlFor='password'>Password</label>
             </div>
          </div>
          
          <div class="form-row1">
             <div class="input-data">
                <input type="text" id='college' name='college' value={data.college} onChange={handleChange} required />
-               <div class="underline"></div>
-               <label htmlFor='college'>College</label>
+               {/* <div class="underline"></div> */}
+               <label className='labelname' htmlFor='college'>College</label>
             </div>
 
             <div class="input-data">
-               <input type="Number" id='passingyear' name='passingyear' value={data.year} onChange={handleChange} required />
-               <div class="underline"></div>
-               <label htmlFor='passingyear'>Passing Year</label>
+               <input type="number" id='year' name='year' value={data.year} onChange={handleChange} required />
+               {/* <div class="underline"></div> */}
+               <label className='labelname' htmlFor='year'>Passing Year</label>
             </div>
          </div>
 
-        <div>
-        <input type='checkbox' name='agree' required/>  agree to terms & conditions
+        <div className='termsMainDiv'>
+        <input type='checkbox' name='agree' required/>  <span className='IAgree'>I agree to the</span> <span className='termsSpan'>terms and conditions</span>.
         </div>
 
-            <div>
-                <button onClick={handleSubmit}>SIGN UP</button>
+            <div className='SignUpMainDiv'>
+                <button className='SignUpMainButton' onClick={handleSubmit}>SIGN UP</button>
             </div>
       </form>
       </div>

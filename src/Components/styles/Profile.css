@@ -1,0 +1,468 @@
+.dashboard-main-container{
+    padding-top: 20px;
+  }
+  
+   .NavbarDashCont{
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      z-index:2;
+      width: 100%;
+      height: 75px;
+      background-color: white;
+      border: 1px solid transparent; 
+      box-shadow: 0 4px 5px -0px rgba(0, 0, 0, 0.064);
+      
+  }
+  .headCont{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+
+
+  .NavbarDashContItem1{
+    display: flex;
+    justify-content: left;
+  }
+  .dashboard-navbar-subitem2{
+    text-align: right;
+  }
+  .headLogo2{
+      padding-left: 20px;
+  }
+  .logoShape2{
+    height: 75px;
+    width: 100%;
+  }
+  .IconPad{
+    padding-top: 23px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .navbarNameDesign{
+      display: flex;
+      justify-content:space-around;
+      margin-right: 4rem;
+      position: relative;
+      
+      
+  }
+  .textRoundDesign{
+      height:40px;
+      width: 40px;
+      border-radius: 40px;
+      color: white;
+      margin-top:18px ;
+      font-size: 28px;
+      background-color: rgb(139, 139, 235);
+      
+  }
+  .nameDesign{
+      height:40px;
+      width:auto;
+      text-align: center;
+      margin-top:18px ;
+      font-size: 20px;
+      padding-top: 6px;
+      color: rgb(139, 139, 235);
+      margin-left: 15px;
+      
+  
+  
+  }
+  .hide-menu-2{
+      position: absolute;
+      z-index: 3;
+      top: 70px;
+      background-color: white;
+      width:150px;
+      height: 105px;
+      border-radius: 5px;
+      display: flex;
+    
+      box-shadow: 0px -2px 2px -2px rgba(237, 233, 233, 0.45),
+                  2px 0px 10px -2px rgba(0,0,0,0.45),
+                  0px 2px 10px -2px rgba(0,0,0,0.45),
+                  -2px 0px 2px -2px rgba(0,0,0,0.45);
+      
+  }
+  .dropDown {
+    float: left;
+    overflow: hidden;
+    letter-spacing: 0.1ch;
+  }
+  .dropDown .dropBtn {
+    font-size: 13px;  
+    border: none;
+    outline: none;
+    height: 28px;
+    
+    background-color: white;
+    color: rgb(103, 103, 103);
+    letter-spacing: 0.1ch;
+    font-weight: 400;
+    margin: 0;
+    margin-right: 9px;
+  }
+  .dropdownItem1 {
+    display: none;
+    position: absolute;
+    font-size: 14px;
+    background-color:white;
+    min-width: 255px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdownItem1 a {
+    float: none;
+    color:grey;
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: 400;
+  }
+  .navbar-name-size{
+    height: 50px;
+  
+  }
+  
+  .dropdownItem1 a:hover {
+    color:rgb(4, 178, 253);
+    font-size: 14px;
+    text-shadow: rgb(0, 177, 253) 0.5px 1px;
+  }
+  
+  .dropDown:hover .dropdownItem1 {
+    display: block;
+  }
+  .dashboardSideBoxItem1{
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+    height:100vh;
+    width: 50px;
+    background-color: #F0F3F4;
+    color: #838383;
+  }
+
+  .dashboardSideBoxItem1 div{
+    text-align: left;
+    
+    
+    font-size: 20px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    /* height:50px; */
+    display:flex;
+    background-color: #FFFFFF;
+  }
+  .MuiSvgIcon-root{
+    color: #838383;
+    height:30px;
+    width: 30px;
+    padding-left: 10px;
+    margin-right: 40px;
+ 
+  }
+
+  
+
+
+  .dashboardSideBox{
+    display: flex;
+    
+  }
+  .numberofcourses-style{
+    padding-top: 100px;
+    width: 65%;
+    padding-left: 5%;
+    padding-right: 25%;
+    background-color: rgb(236, 236, 243);
+  
+  
+  }
+  .courses-length{
+    font-size: 20px;
+    text-align: left;
+    /* padding-left: 40px; */
+    
+   color: #00A5EC;
+    /* border-bottom: 2px solid blue; */
+  }
+  .text-dec-none{
+    text-decoration: none;
+    color: #838383;
+    font-size: medium;
+  }
+  .mock-sub-container{
+    display: flex;
+    justify-content:left;
+   
+    /* width: 900px; */
+    /* flex-wrap: wrap; */
+  }
+
+
+
+  .dropbtMain1{
+    /* margin: auto; */
+    margin-top: 1rem;
+    /* margin-right: 2rem; */
+    /* width: 100%; */
+  }
+  
+  .dropdown21 {
+    /* float: left; */
+    /* overflow: hidden; */
+    letter-spacing: 0.1ch;
+    cursor: pointer;
+    margin-right: 6rem;
+    margin-top: 1rem;
+    
+  }
+  
+  .dropdown21 .dropbtn21 {
+    font-size: 13px;  
+    border: none;
+    outline: none;
+    height: 28px;
+    
+    background-color: white;
+    color: rgb(103, 103, 103);
+    letter-spacing: 0.1ch;
+    font-weight: 400;
+    
+    margin: 0;
+    /* margin-right: 9px; */
+  }
+  
+  .text-round-style1{
+    /* height:28px;
+    width: 28px;
+    border-radius: 20px;
+    background-color: #03A6EC;
+    color:white;
+    display: inline-block;
+    font-size: 20px; */
+  
+    font-size: 18px;
+    border: 1px solid #03A6EC;
+    background-color: #03A6EC;
+    border-radius: 50%;
+    padding: 5px 11px;
+    text-align: center;
+    color: white;
+    
+  }
+  .text-normal-style1{
+    height:28px;
+    width: 28px;
+    margin-left: 10px;
+    font-size: 18px;
+    /* display: inline-block; */
+    color: #6CA1EC;
+    
+  }
+  
+  .dropdown-content21 {
+    display: none;
+    position: absolute;
+    font-size: 14px;
+    background-color:white;
+    /* width: 2rem; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+    margin-top: 1rem;
+    
+  }
+  
+  
+  
+  .dropdown-content21.show {
+    display: block;
+  }
+  
+ 
+  .dropdown-content21 a {
+    float: none;
+    
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: 400;
+  }
+  
+  
+  .navbar-name-size{
+    height: 50px;
+  
+  }
+  
+  /* .dropdown-content2 a:hover {
+    color:rgb(4, 178, 253);
+    font-size: 14px;
+    text-shadow: rgb(0, 177, 253) 0.5px 1px;
+  }
+  
+  .dropdown2:hover .dropdown-content2 {
+    display: block;
+  } */
+  
+  .navbar-logout-btn11{
+    border:none;
+    /* height: 35px; */
+    /* padding: 10px 10px; */
+    width: 12rem;
+    height: 3.5rem;
+    border-bottom: 1px solid #CECECE;
+    background-color: #FFFFFF;
+    font-size: 0.9rem;
+    
+  }
+  
+  .navbar-logout-btn11 a{
+    color: #02215b;
+  }
+  
+  .navbar-logout-btn121{
+    border:none;
+    /* height: 35px; */
+    padding: px 10px;
+    width: 12rem;
+    height: 3.5rem;
+    border-bottom: 1px solid #CECECE;
+    background-color: #FFFFFF;
+  
+    font-size: small;
+  }
+  
+  .navbar-logout-btn121 a{
+    color: #FF8787;
+  }
+  
+  .ImageandMy1{
+    display: flex;
+    gap: 0.5rem;
+    /* margin: auto; */
+  }
+  
+  .ImageandMy1 img{
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+
+
+  .miniContainer11 {
+    width: 14rem;
+    height: 20rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 5px 0 #cfcccc;
+    border-radius: 1px;
+    padding: 1.5rem;
+    /* border: 1px solid #252B48; */
+    /* transition: transform 0.3s ease;
+    transform: translateY(0%); */
+    position: relative;
+
+    background-image: linear-gradient(to bottom, #E2ECF9, #FFFFFF);
+}
+
+.miniContainer11:hover{
+  box-shadow: 1px 1px 10px 5px #b0b1b1;
+}
+  
+.priceMainContainer11{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.allMini11{
+    display: flex;
+    flex-direction: column;
+    height: 4.5rem;
+    color: #707070;
+    line-height: 1.5rem;
+    justify-content: center;
+}
+
+.infoImage11{
+    height: 1.6rem;
+    width: 1.6rem;
+}
+  
+.infoImageDiv11{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.ShareDiv11{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.shareSymbol11{
+    font-size: larger;
+    color: #5F8DC4;
+}
+
+.mainHeading11{
+    font-size: large;
+    color: #3969AD;
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.techImage11{
+    height: 5rem;
+    width: 5rem;
+}
+
+.techImageDiv11{
+    margin-bottom: 2rem;
+}
+
+.spanDowntext11{
+    font-size: small;
+}
+
+.buynowButton11{
+    background-color: #22559C;
+    width: 60%;
+    margin: auto;
+    color: white;
+    border: 1px solid #22559C;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: small;
+    cursor: pointer;
+}
+
+#flex-container11 {
+  width: 80%;
+  /* margin-left: 5%; */
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+
+
+
+

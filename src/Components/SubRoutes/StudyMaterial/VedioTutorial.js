@@ -10,7 +10,7 @@ const VedioTutorial = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:2923/api/mocktests');
+      const response = await axios.get('https://prepbytes-clone-backend.onrender.com/api/mocktests');
       setData(response.data);
     } catch (error) {
       setError(error);

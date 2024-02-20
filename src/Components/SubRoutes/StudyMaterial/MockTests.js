@@ -3,6 +3,7 @@ import "../../styles/StudyMaterial.css";
 import axios from 'axios';
 import { FaShareAlt } from 'react-icons/fa';
 import Footer from '../../Footer';
+import { loadStripe } from '@stripe/stripe-js';
 
 
 
@@ -11,10 +12,11 @@ const MockTests = () => {
 
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
+  // const [renderData,setRenderData] = useState([])
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:2923/api/mocktests');
+      const response = await axios.get('https://prepbytes-clone-backend.onrender.com/api/mocktests');
       setData(response.data);
     } catch (error) {
       setError(error);
@@ -28,6 +30,57 @@ const MockTests = () => {
   if (error) {
     return <div>Error: {error.message}</div>;
   }
+
+  const checkitem=(id)=>{
+    for (let i=0;i<data.length;i++){
+                  if(data[i].id===id){
+                    data[i]['useremail']=localStorage.getItem("selfdetails")
+                    console.log(data[i],"1111111111111111111")
+                      return [data[i]]
+  
+                  }
+              }
+
+  }
+  const   handlePayment=async (id)=>{
+    const result=await checkitem(id)
+    console.log(result,"22222222222222")
+    
+    
+    const stripe=await loadStripe(" pk_test_51OMERySJb30zHYKXhazWu96YHeq9esM7jjoHRU5Yl6OsFBFrIqAN4l6DR432lstZ8S1BEgMXk05yGcoIoqcZQ0FJ00fJW2eWVM")
+const body={
+products:result
+}
+const headers={
+"content-Type":"application/json"
+}
+try {
+const response = await fetch("http://localhost:2923/user/createcheckout1", {
+method: "POST",
+headers: headers,
+body: JSON.stringify(body),
+});
+
+if (!response.ok) {
+throw new Error(`HTTP error! Status: ${response.status}`);
+}
+
+const session = await response.json();
+console.log(session);
+
+const result = await stripe.redirectToCheckout({
+sessionId: session.id,
+});
+
+
+if (result.error) {
+console.log(result.error);
+}
+} catch (error) {
+console.error("Fetch error:", error);
+}
+
+}
 
 
   return (
@@ -95,7 +148,7 @@ const MockTests = () => {
             <hr/>
 
             <div className='allMini'>
-            <span>{item.participants}</span>
+            <span>{item.price}</span>
               <span className='spanDowntext'>Price</span>
             </div>
 
@@ -107,7 +160,7 @@ const MockTests = () => {
             </div>
           </div>
 
-          <button className='buynowButton'>Buy Now</button>
+          <button className='buynowButton' onClick={()=>handlePayment(item.id)}>Buy Now</button>
         </div>
       );
     })}
@@ -138,7 +191,7 @@ const MockTests = () => {
 
           <span className='mainHeading1'>{item.name}</span>
 
-          <button className='buynowButton1'>Buy Now</button>
+          <button className='buynowButton1' onClick={()=>handlePayment(item.id)}>Buy Now</button>
          
         </div>
       );
@@ -161,7 +214,7 @@ const MockTests = () => {
 
           <span className='mainHeading1'>{item.name}</span>
 
-          <button className='buynowButton1'>Buy Now</button>
+          <button className='buynowButton1' onClick={()=>handlePayment(item.id)}>Buy Now</button>
          
         </div>
       );
@@ -191,7 +244,7 @@ const MockTests = () => {
 
          
 
-          <button className='buynowButton2'>Buy Now</button>
+          <button className='buynowButton2' onClick={()=>handlePayment(item.id)}>Buy Now</button>
          
         </div>
       );
@@ -213,7 +266,7 @@ const MockTests = () => {
 
          
 
-          <button className='buynowButton2'>Buy Now</button>
+          <button className='buynowButton2' onClick={()=>handlePayment(item.id)}>Buy Now</button>
          
         </div>
       );

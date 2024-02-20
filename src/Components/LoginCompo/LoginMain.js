@@ -30,17 +30,17 @@ const LoginMain = () => {
         // }
     
         axios
-          .post('https://ecommerce-project-backend-w01h.onrender.com/user/register', data)
+          .post('https://prepbytes-clone-backend.onrender.com/user/login', data)
           .then((res) => {
             // alert(res.data.msg);
             
             
     
-            if (res.data.msg === "User Registered successfully") {
+            if (res.data.msg === "User login successfully") {
               localStorage.setItem('token', res.data.token);
               console.log("token display",res.data.token)
             
-              localStorage.setItem("selfname",res.data.userdetail.username)
+              localStorage.setItem("selfname",res.data.userdetail.name)
               localStorage.setItem("selfdetails",res.data.userdetail.email)
             
               alert(res.data.msg)
@@ -71,34 +71,34 @@ const LoginMain = () => {
   return (
     <div>
        <div class="Formcontainer">
-      {/* <div class="text">
-         Contact us Form
-      </div>  */}
+      <div class="head123">
+      Sign in to your account
+      </div> 
       <form>
          <div class="form-row">
             
 
             <div class="input-data">
                <input type="email" id='email' name='email' value={data.email} onChange={handleChange} required />
-               <div class="underline"></div>
-               <label htmlFor='email'>Email</label>
+               {/* <div class="underline"></div> */}
+               <label className='labelname' htmlFor='email'>Email</label>
             </div>
 
             <div class="input-data">
                <input type="password" id='password' name='password' value={data.password} onChange={handleChange} required />
-               <div class="underline"></div>
-               <label htmlFor='password'>Password</label>
+               {/* <div class="underline"></div> */}
+               <label className='labelname' htmlFor='password'>Password</label>
             </div>
          </div>
 
 
         
         
-            <NavLink to='#'>Forgot your password?</NavLink>
-            <div>
-                <button onClick={handleSubmit}>SIGN IN</button>
+            <NavLink className='ForgotNav' to='#'>Forgot your password?</NavLink>
+            <div className='SignUpMainDiv'>
+                <button className='SignUpMainButton' onClick={handleSubmit}>SIGN IN</button>
             </div>
-            <div><button>Login Via OTP</button></div>
+            <div className='SignUpMainDiv1'><button className='SignUpMainButton1'>Login Via OTP</button></div>
       </form>
       </div>
     </div>

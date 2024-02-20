@@ -84,12 +84,15 @@
   max-width: 800px;
   background: #fff;
   width: 22rem;
-  padding: 25px 40px 10px 40px;
+  padding: 25px 40px 30px 30px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-   border: 1px solid red;
+   /* border: 1px solid red; */
    margin: auto;
+   margin-left: 3.5rem;
+   margin-top: 1rem;
+   border-radius: 10px;
 }
-.Formcontainer .text{
+/* .Formcontainer .text{
   text-align: center;
   font-size: 41px;
   font-weight: 600;
@@ -97,29 +100,36 @@
   background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 .Formcontainer form{
   padding: 30px 0 0 0;
 }
 .Formcontainer form .form-row{
   display: flex;
-  margin: 32px 0;
+  margin: 15px 0;
   flex-direction: column;
-   gap: 2rem;
+   gap: 1.5rem;
+   margin-bottom: 2rem;
+  
 }
 
 .Formcontainer form .form-row1{
   display: flex;
   margin: 32px 0;
+ 
 
    gap: 2rem;
 }
 
 form .form-row .input-data{
-  width: 100%;
+  width: 90%;
   height: 40px;
   margin: 0 20px;
   position: relative;
+}
+
+ .labelname{
+  color: #6B6F70;
 }
 
 form .form-row1 .input-data{
@@ -152,10 +162,42 @@ form .form-row1 .textarea{
 .input-data input:focus ~ label, .textarea textarea:focus ~ label,
 .input-data input:valid ~ label, .textarea textarea:valid ~ label{
   transform: translateY(-20px);
-  font-size: 14px;
-  color: #3498db;
+  /* border-bottom: 1px solid #3498db; */
+  font-size: 12px;
+  /* color: #3498db; */
 }
 
+
+.input-data input:focus,
+.textarea textarea:focus {
+  border-bottom: 2px solid #4B8CE8;
+}
+
+.input-data input:valid,
+.textarea textarea:valid {
+  border-bottom: 2px solid #4B8CE8;
+}
+
+.termsSpan{
+  color: #4B8CE8;
+  font-size: medium;
+  /* letter-spacing: 0.1rem; */
+}
+
+.IAgree{
+  color: #6B6F70;
+  font-size: medium;
+  /* letter-spacing: 0.1rem; */
+}
+
+.termsMainDiv{
+  width: 95%;
+  margin: auto;
+  /* margin-right: 1rem; */
+  margin-top: -1rem;
+  text-align: start;
+
+}
 
 .textarea textarea{
   resize: none;
@@ -240,3 +282,111 @@ form .form-row1 .textarea{
     width: 40%!important;
   }
 } */
+
+
+
+.LogButtonsDiv{
+  /* background-color: #fff; */
+  /* border-top: none;
+  border-left: none;
+  border-right: none; */
+  border-bottom: 2px solid #56d8e4 ;
+ 
+  width: 84%;
+  margin-left: 3.5rem;
+  text-align: center;
+  height: 4rem;
+  margin-bottom: -6rem;
+
+}
+
+.LogButtonsDivIn{
+  /* border-bottom: 1px solid #4B8CE8; */
+  margin: auto;
+  height: 3rem;
+  width: 80%;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.SiginUpButton{
+  color: #6B6F70;
+  border: none;
+  width: 8rem;
+  height: 3rem;
+  background-color: #fff;
+  font-size: x-large;
+}
+
+.LoginupButton{
+  color: #6B6F70;
+  border: none;
+  width: 8rem;
+  height: 3rem;
+  background-color: #fff;
+  font-size: x-large;
+}
+
+.SiginUpButton.active,
+.LoginupButton.active {
+  color:#4B8CE8;
+  border-bottom: 3px solid #4B8CE8;
+}
+
+.head123{
+  color: #767779;
+  margin: auto;
+  margin-top: 2.4rem;
+  /* margin-left: 1.5rem; */
+  font-size: 1.3rem;
+  font-weight: bold;
+  width: 90%;
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid #4B8CE8;
+  
+}
+
+.SignUpMainButton{
+  background-color: #4B8CE8;
+  border: none;
+  border-radius: 5px;
+  width: 20rem;
+  height: 2.1rem;
+  text-align: center;
+  color: white;
+  font-size: medium;
+}
+
+.SignUpMainDiv{
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.SignUpMainButton1{
+  background-color: #F2F8FF;
+  border: 1px solid #4B8CE8;
+  border-radius: 5px;
+  width: 20rem;
+  height: 2.1rem;
+  text-align: center;
+  color: #4B8CE8;
+  font-size: medium;
+}
+
+.SignUpMainDiv1{
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.ForgotNav{
+  text-decoration: none;
+  color: #4B8CE8;
+  font-size: medium;
+  margin-left: 1rem;
+  
+}
