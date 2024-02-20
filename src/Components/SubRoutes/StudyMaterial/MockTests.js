@@ -56,7 +56,8 @@ const headers={
 "content-Type":"application/json"
 }
 try {
-const response = await fetch("https://prepbytes-clone-backend.onrender.com/user/createcheckout1", {
+// const response = await fetch("https://prepbytes-clone-backend.onrender.com/user/createcheckout1", {
+  const response = await fetch("http://localhost:2923/user/createcheckout1", {
 method: "POST",
 headers: headers,
 body: JSON.stringify(body),
