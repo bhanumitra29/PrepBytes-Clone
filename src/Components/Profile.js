@@ -40,19 +40,37 @@ const Profile = () => {
  
   
   
+  // useEffect(() => {
+  //       const buyData = async () => {
+  //        try {
+  //           // const response1 = await axios.get('https://prepbytes-clone-backend.onrender.com/user/paid');
+  //           const response1 = await axios.get('http://localhost:2923/user/paid');
+  //           SetpurchasedCourses(response1.data)
+             
+             
+  //        } catch (error) {
+  //          console.log(error);
+  //          }
+  //        };
+  //        buyData(); 
+  //           },[purchasedCourses]);
+
+
   useEffect(() => {
-        const buyData = async () => {
-         try {
-            const response1 = await axios.get('https://prepbytes-clone-backend.onrender.com/user/paid');
-            SetpurchasedCourses(response1.data)
-             
-             
-         } catch (error) {
-           console.log(error);
-           }
-         };
-         buyData(); 
-            },[purchasedCourses]);
+    const interval=setInterval(async() => {
+     try {
+        const response1 = await axios.get('https://prepbytes-clone-backend.onrender.com/user/paid');
+        SetpurchasedCourses(response1.data)
+         
+         
+     } catch (error) {
+       console.log(error);
+       }
+     },1000);
+     return () => clearInterval(interval);
+        },[navigate]);
+
+            
   const widthhandle={
               width: handleItem ? '90px' : '300px',
 
