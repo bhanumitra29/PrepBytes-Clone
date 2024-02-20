@@ -35,7 +35,7 @@ const MockTests = () => {
   const checkitem=(id)=>{
     for (let i=0;i<data.length;i++){
                   if(data[i].id===id){
-                    data[i]['useremail']=localStorage.getItem("selfdetails")
+                    data[i]['email']=localStorage.getItem("selfdetails")
                     console.log(data[i],"1111111111111111111")
                       return [data[i]]
   
